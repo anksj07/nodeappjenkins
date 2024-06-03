@@ -1,0 +1,29 @@
+sudo yum install git -y
+    2  mkdir nodeapp
+    3  cd nodeapp/
+    4  git init
+    5  git pull
+https://github.com/ravibagale/nodeapp.git
+
+    7  sudo yum install nodejs
+    8  node -v
+    9  npm -v
+
+
+//to   build  project
+
+  npm install
+sudo npm install -g pm2
+pm2 start index.js
+
+  //to test 
+
+  npm install 
+./node_modules/mocha/bin/_mocha ./test/test.js
+
+  //to deploy 
+  cd  /home/ec2-user/nodeapp/
+git pull
+https://github.com/ravibagale/nodeapp.git
+sudo npm install -g pm2
+pm2 restart index.js
